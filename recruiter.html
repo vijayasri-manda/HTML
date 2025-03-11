@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome Recruiter</h1>
+        <nav>
+            <ul>
+                <li><a href="#post-job">Post a Job</a></li>
+                <li><a href="#view-applicants">View Applicants</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="post-job">
+        <h2>Post a New Job</h2>
+        <form>
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" name="job-title" required>
+
+            <label for="company-name">Company Name:</label>
+            <input type="text" id="company-name" name="company-name" required>
+
+            <label for="job-description">Job Description:</label>
+            <textarea id="job-description" name="job-description" required></textarea>
+
+            <button type="submit">Post Job</button>
+        </form>
+    </section>
+
+    <section id="view-applicants">
+        <h2>View Applicants</h2>
+        <!-- Applicants will be shown here -->
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
