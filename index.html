@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Job Portal</h1>
+    </header>
+
+    <!-- Job Search -->
+    <section class="search-section">
+      <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Search for jobs...">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <!-- Job Listings -->
+    <section id="jobListings" class="job-listings">
+      <!-- Job items will appear here -->
+    </section>
+
+    <!-- Apply Section -->
+    <section id="applySection" class="apply-section" style="display: none;">
+      <h2>Apply for <span id="jobTitle"></span></h2>
+      <form id="applyForm">
+        <input type="file" id="resumeFile" required>
+        <button type="submit">Submit Resume</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
