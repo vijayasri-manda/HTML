@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Seeker Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome Job Seeker</h1>
+        <nav>
+            <ul>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#resume-builder">Resume Builder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="jobs">
+        <h2>Available Jobs</h2>
+        <!-- Example Job Listings -->
+        <div class="job-listing">
+            <h3>Software Engineer</h3>
+            <p>Company: ABC Corp</p>
+            <p>Description: Full Stack Developer</p>
+            <button>Apply Now</button>
+        </div>
+        <!-- Add more jobs here -->
+    </section>
+
+    <section id="resume-builder">
+        <h2>Resume Builder</h2>
+        <form>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="skills">Skills:</label>
+            <textarea id="skills" name="skills" required></textarea>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
